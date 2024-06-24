@@ -1,0 +1,27 @@
+server:
+  port: 8081
+  
+spring:
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto : update
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+  profiles:
+    active:
+    - local
+
+cloud:
+  aws:
+    region:
+      static: ap-south-1
+      auto: false
+    creentials:
+      access-key: <>
+      secret-key: <> 
+      
+      
+    
+      
+    
+        
